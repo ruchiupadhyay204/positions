@@ -1,0 +1,13 @@
+1. Absolute Positioning
+Definition: When an element is set to position: absolute;, it is removed from the normal document flow and positioned relative to its nearest positioned ancestor (an ancestor element with position: relative, absolute, or fixed). If no such ancestor exists, it is positioned relative to the <html> element (the document itself).
+Behavior:
+The element does not affect the position of sibling elements.
+Its placement is determined by the values of top, right, bottom, and left properties.
+It allows precise placement of the element anywhere on the page or within a container.
+
+2. Relative Positioning
+Definition: When an element is set to position: relative;, it remains in the normal document flow, but it can be offset relative to its original position using top, right, bottom, and left.
+Behavior:
+The space for the element is still reserved in the layout as if it were not offset.
+Sibling elements are not affected by its offset.
+It’s often used to position an element slightly or as a container for absolutely positioned child elements.

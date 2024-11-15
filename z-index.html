@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-index</title>
+</head>
+<style>
+   body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.box {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.box1 {
+  background-color: red;
+  z-index: 1; /* Lowest stacking order */
+  left: 50px;
+}
+
+.box2 {
+  background-color: green;
+  z-index: 3; /* Highest stacking order */
+  left: 100px;
+}
+
+.box3 {
+  background-color: blue;
+  z-index: 2; /* Middle stacking order */
+  left: 150px;
+}
+    </style>
+<body>
+<div class="box box1">Box 1</div>
+<div class="box box2">Box 2</div>
+<div class="box box3">Box 3</div>
+</body>
+
+</html>
